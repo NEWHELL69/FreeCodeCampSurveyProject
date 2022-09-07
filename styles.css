@@ -1,0 +1,26 @@
+
+/* css reset */
+
+h1 {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+/* ----------------------- */
+
+header {
+    background-color:aqua;
+}
+
+header div {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+header h1{
+    display: inline-block;
+    margin: 0px;
+}
