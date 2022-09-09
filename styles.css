@@ -7,6 +7,7 @@ html {
 body {
     margin: 0px;
     height: 100%;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -17,12 +18,74 @@ p {
     margin: 0px;
 }
 
+fieldset {
+    border: 0px;
+    margin: 0;
+    padding: 0;
+}
+
 /* ----------------------- */
 
 h1{
     text-align: center;
 }
 
+header {
+    margin-bottom: 25px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
 header p {
     text-align: center;
 }
+
+.container {
+    padding: 50px 0;
+    background-color: #FFDE59;
+}
+
+form {
+    background-color: #C069F6;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 98%;
+  min-height: 2em;
+  padding: 0;
+  border: 0;
+  background-color: #C069F6;
+  padding: 1%;
+  border: 1px solid black;
+}
+
+::placeholder {
+    color: #212529;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
