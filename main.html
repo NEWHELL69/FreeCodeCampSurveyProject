@@ -19,10 +19,49 @@
         
         <div class="container">
             <header>
-                <div></div>
-                <div></div>
+                <h1 id="title">Customer Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve our service.</p>
             </header>
-            <form action=""></form>
+            <form action="" id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name">Enter Your Name: <input id="name" type="text" required /></label>
+                    <label id="email-label" for="email">Enter Your Email: <input id="email" type="email" required /></label>
+                    <label id="number-label" for="number">Enter Your Number: <input id="number" type="text" pattern="[0-9]" min = "1" max="9"/></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="dropdown">How did you hear about us?
+                        <select id="dropdown" name="referrer">
+                          <option value="">(select one)</option>
+                          <option value="1">Through family or friends</option>
+                          <option value="2">Google</option>
+                          <option value="3">Newspaper article</option>
+                          <option value="4">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="online"><input id="online" type="radio" name="customer-type"/> Online</label>
+                    <label for="walk-in"><input id="walk-in" type="radio" name="customer-type"/> Walk In</label>
+                </fieldset>
+
+                <fieldset>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+
+                    <label><input type="checkbox" id="vehicle1" name="prefer" value="front-end-project">Front-end Projects</label>
+                    <label><input type="checkbox" id="vehicle2" name="prefer" value="data-visualization">Data Visualization</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="comments">Any comments or suggestions?
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </form>
         </div>
 
     </body>
